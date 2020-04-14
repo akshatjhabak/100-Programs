@@ -2,15 +2,18 @@
 using namespace std;
 main()
 {
-	int n,a=0,b=1,c;
-	cout<<"enter the limit of series"<<endl;
+	int n,a=0,b=1,sum;
+	cout<<"enter the fibonacci series you want "<<endl;
 	cin>>n;
-	for(int i=1;i<=n;i++)
+	cout<<"fibonacci terms are"<<a<<endl<<b<<endl;
+	
+	for(int i=1;i<=n-2;i++)
 	{
-		cout<<a;
-		c=a+b;
-		b=a;
-		b=c;
-		
+
+		sum=a+b;
+		cout<<sum<<endl;
+		a=b;;
+		b=sum;
+	
 	}
 }
